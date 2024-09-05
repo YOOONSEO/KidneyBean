@@ -95,7 +95,7 @@ Add_box = (Dday, day, time, cnt) => {
             "</div>"+
             "<div class='Box'>"+
                 "<div class='Weather'>"+
-                    "<img src='/img/sun.png'/>"+
+                    "<img src='https://i.ibb.co/HTCFzpp/sun.png'/>"+
                 "</div>"+
                 "<div>"+
                     "<h1 class='txt' style='font-size: 4vh'>" + Dday + "일차</h1>"+
@@ -112,14 +112,18 @@ Diary = (Dday, cnt) => {
     document.getElementById('DIARY').innerHTML =
     "<div id='Info'>"+
         "<p onclick='Home()'>강낭콩</p>"+
-        "<img src='/img/green beans.png' style=''/>"+
+        "<img src='https://i.ibb.co/Z125GsP/green-beans.png' style=''/>"+
     "</div>"+
     "<div id='Wrapper2'>"+
         "<img id='imageFrame'/>"+
         "<p class='txt' style='width: 100%; padding: 3% 0; border: 13px solid #DFF2ED; text-align: center; font-weight: bold;'>" + Dday + "일차</p>"+
-        "<div style='width: 100%; display: flex; align-items: center; justify-content: space-between; border: 13px solid #DFF2ED; font-weight: bold;'>"+
+        "<div style='width: 100%; margin-bottom: 3%; display: flex; align-items: center; justify-content: space-between; border: 13px solid #DFF2ED; font-weight: bold;'>"+
             "<p class='txt' style='padding: 3% 3%; margin: 0;'>" + date[cnt-1][cnt] + "</p>"+
             "<p class='txt' style='padding: 3% 3%; margin: 0;'>" + time[cnt-1][cnt] + "</p>"+
+        "</div>"+
+        "<div style='width: 100%; display: flex; align-items: center; justify-content: space-between; border: 13px solid #DFF2ED; font-weight: bold;'>"+
+            "<p class='txt' style='padding: 3% 3%; margin: 0;'> 조도&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp" + lx[cnt-1][cnt] + "</p>"+
+            "<p class='txt' style='padding: 3% 3%; margin: 0;'>습도&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp" + HUM[cnt-1][cnt] + "</p>"+
         "</div>"+
         "<p id='Analyze' class='txt'" +
         "style='width: 100%; padding: 3% 0; background-color: #DFF2ED; text-align: center;'"+
@@ -134,7 +138,7 @@ Main = () => {
     document.getElementById('MAIN').innerHTML =
     "<div id='Info'>"+
         "<p>강낭콩</p>"+
-        "<img src='/img/green beans.png'/>"+
+        "<img src='https://i.ibb.co/Z125GsP/green-beans.png'/>"+
     "</div>"+
     "<div id='Wrapper'>"+
     "</div>";
